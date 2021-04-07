@@ -24,6 +24,8 @@ function calculate()
     let totalFees = totalFeesPerDay * daysLate;
 
     //Output
+    $("span#totalFees").text(totalFees.toFixed(2));
     alert(`The total late fees due are $${totalFees.toFixed(2)}.`);
+
 
 }
