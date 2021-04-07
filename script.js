@@ -5,13 +5,13 @@ function calculate()
     let dvdFee = .50
 
     // ask for the number of books being returned converting text string to a number
-    let booksNum = parseFloat( prompt("How many books are you returning?"));
+    let booksNum = parseFloat( $("#numberOfBooks").val() );
 
     //ask for the number of DVDs being returned converting text string to a number
-    let dvdsNum = parseFloat( prompt("How many DVDs are you returning?"));
+    let dvdsNum = parseFloat( $("#numberOfDvds").val() );
 
     // ask for the number of days the items are overdue converting text string to an integer
-    let daysLate = parseInt( prompt("How many days are these items overdue?"));
+    let daysLate = parseInt( $("#daysLate").val() );
 
     //calculate book fees per day
     let bookFeesPerDay = bookFee * booksNum;
